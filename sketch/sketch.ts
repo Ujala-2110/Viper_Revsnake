@@ -260,7 +260,7 @@ function updateFood(x:number, y:number):void{
 function keyPressed(): void {
     keyCount++;
     let fx=food[0], fy=food[1];
-    if (keyCode === 37) {
+    if (keyCode === 65) {
         //console.log("LEFT")
         fy = food[1]-1;
         fy = (fy<0?grid[0].length-1:fy);
@@ -268,21 +268,21 @@ function keyPressed(): void {
             updateFood(fx,fy);
         }
         
-    } else if (keyCode === 39) {
+    } else if (keyCode === 68) {
         // console.log("RIGHT")
         fy = food[1]+1;
         fy = (fy>=grid[0].length?0:fy);
         if(grid[fx][fy].isDisabled == false){
             updateFood(fx,fy);
         }
-    } else if (keyCode === 38) {
+    } else if (keyCode === 87) {
         // console.log("UP")
         fx = food[0]-1;
         fx = (fx<0?grid.length-1:fx);
         if(grid[fx][fy].isDisabled == false){
             updateFood(fx,fy);
         }
-    } else if (keyCode === 40) {
+    } else if (keyCode === 83) {
         // console.log("DOWN")
         fx = food[0]+1;
         fx = (fx>=grid.length-1?0:fx);

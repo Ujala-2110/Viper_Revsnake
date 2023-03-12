@@ -10,7 +10,7 @@ The source code is present inside `sketch/`.
  :)
 
  ## Instructions:
-  - Use ↑, ←, ↓, → to steer the food in the 2D spaces, avoiding the blocked cells
+  - Use W,A,S,D to steer the food in the 2D spaces, avoiding the blocked cells
   - Control the speed of the snake using the slider, more speed == better score
   - That is pretty much it, Have fun :)
 
